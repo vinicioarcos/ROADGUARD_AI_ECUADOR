@@ -1,0 +1,15 @@
+{
+  "name": "roadguard-ai-ecuador",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web-dashboard",
+    "build": "npm run build --workspace=apps/web-dashboard",
+    "start": "npm run start --workspace=apps/web-dashboard",
+    "lint": "npm run lint --workspace=apps/web-dashboard"
+  }
+}

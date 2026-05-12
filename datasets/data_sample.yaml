@@ -1,0 +1,13 @@
+# RoadGuard AI Ecuador - Dataset Configuration
+
+path: ../datasets # root dir
+train: labeled/train/images
+val: labeled/val/images
+test: labeled/test/images # optional
+
+# Classes
+names:
+  0: bache
+  1: hueco
+  2: grieta
+  3: desnivel

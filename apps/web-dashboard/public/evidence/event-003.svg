@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Hueco alto detectado</title>
+  <desc id="desc">Ilustración local de evidencia para un hueco de severidad alta.</desc>
+  <rect width="800" height="450" fill="#f0fdf4"/>
+  <path d="M0 200 C210 170 430 205 800 175 L800 450 L0 450 Z" fill="#3f3f46"/>
+  <path d="M356 190 L300 450" stroke="#f8fafc" stroke-width="10" stroke-dasharray="30 26"/>
+  <path d="M468 182 L560 450" stroke="#f8fafc" stroke-width="10" stroke-dasharray="30 26"/>
+  <ellipse cx="525" cy="325" rx="92" ry="62" fill="#18181b"/>
+  <ellipse cx="518" cy="316" rx="66" ry="41" fill="#27272a"/>
+  <path d="M450 300 C474 260 563 260 604 300" fill="none" stroke="#f97316" stroke-width="8"/>
+  <rect x="36" y="34" width="178" height="42" rx="8" fill="#c2410c"/>
+  <text x="125" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">Alta</text>
+</svg>

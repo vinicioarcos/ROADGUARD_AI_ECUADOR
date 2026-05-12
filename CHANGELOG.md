@@ -1,5 +1,18 @@
 # CHANGELOG.md
 
+## [No publicado]
+
+### Agregado
+
+- Documento base de arquitectura en `docs/arquitectura.md`.
+- Informe inicial del piloto Pallatanga - Bucay.
+- Datos semilla para rutas, sesión de captura, versión de modelo y evento vial.
+
+### Cambiado
+
+- Configuración de Next.js para declarar explícitamente la raíz de Turbopack.
+- Decisión registrada para tratar el dashboard como carpeta normal del monorepo.
+
 ## [0.2.0] - 2026-05-12
 
 ### Agregado

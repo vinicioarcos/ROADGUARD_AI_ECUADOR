@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Grieta media detectada</title>
+  <desc id="desc">Ilustración local de evidencia para una grieta de severidad media.</desc>
+  <rect width="800" height="450" fill="#ecfeff"/>
+  <path d="M0 190 L800 170 L800 450 L0 450 Z" fill="#52525b"/>
+  <path d="M250 450 L394 178" stroke="#f8fafc" stroke-width="10" stroke-dasharray="28 24"/>
+  <path d="M456 450 L420 178" stroke="#f8fafc" stroke-width="10" stroke-dasharray="28 24"/>
+  <path d="M210 310 C250 295 278 325 315 306 C352 287 384 317 421 298 C464 276 508 298 544 280" fill="none" stroke="#1f2937" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 310 C250 295 278 325 315 306 C352 287 384 317 421 298 C464 276 508 298 544 280" fill="none" stroke="#facc15" stroke-width="4" stroke-linecap="round"/>
+  <rect x="36" y="34" width="178" height="42" rx="8" fill="#a16207"/>
+  <text x="125" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">Media</text>
+</svg>

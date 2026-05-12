@@ -1,0 +1,41 @@
+[
+  {
+    "id": "EVT-20260512-001",
+    "timestamp": "2026-05-12T10:30:00Z",
+    "route": "Pallatanga - Bucay",
+    "type": "Bache",
+    "severity": "Crítica",
+    "confidence": 0.98,
+    "lat": -2.0012,
+    "lng": -78.9876,
+    "imageUrl": "/evidence/event-001.svg",
+    "status": "pendiente",
+    "notes": "Daño profundo en carril derecho."
+  },
+  {
+    "id": "EVT-20260512-002",
+    "timestamp": "2026-05-12T11:15:00Z",
+    "route": "Balbanera - Pallatanga",
+    "type": "Grieta",
+    "severity": "Media",
+    "confidence": 0.85,
+    "lat": -1.985,
+    "lng": -78.95,
+    "imageUrl": "/evidence/event-002.svg",
+    "status": "validado",
+    "notes": "Grieta longitudinal visible en superficie de rodadura."
+  },
+  {
+    "id": "EVT-20260512-003",
+    "timestamp": "2026-05-12T12:00:00Z",
+    "route": "Pallatanga - Bucay",
+    "type": "Hueco",
+    "severity": "Alta",
+    "confidence": 0.92,
+    "lat": -2.015,
+    "lng": -79.01,
+    "imageUrl": "/evidence/event-003.svg",
+    "status": "pendiente",
+    "notes": "Hueco cercano a curva con reducción de visibilidad."
+  }
+]

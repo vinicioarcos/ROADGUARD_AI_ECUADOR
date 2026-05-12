@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Evidencia no disponible</title>
+  <desc id="desc">Marcador visual usado cuando no existe imagen de evidencia.</desc>
+  <rect width="800" height="450" fill="#f3f4f6"/>
+  <rect x="90" y="270" width="620" height="90" rx="10" fill="#4b5563"/>
+  <path d="M140 335 C250 290 370 380 500 315 C590 270 655 305 710 285" fill="none" stroke="#facc15" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="400" cy="190" r="54" fill="#d1d5db"/>
+  <path d="M376 190h48M400 166v48" stroke="#6b7280" stroke-width="12" stroke-linecap="round"/>
+  <text x="400" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#374151">Sin imagen de evidencia</text>
+</svg>

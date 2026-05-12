@@ -47,3 +47,13 @@ Decisión: Eventos locales versionables para el MVP.
 Motivo: Permite conectar el dashboard con datos reales normalizados sin bloquear el avance por la configuración de Supabase.
 Impacto: `scripts/upload_events.py` normaliza CSV/JSON y publica `apps/web-dashboard/public/data/events.json`. Supabase queda como siguiente integración.
 Estado: aceptada.
+
+---
+
+## DEC-006
+
+Fecha: 2026-05-12
+Decisión: Dashboard como carpeta normal del monorepo.
+Motivo: El proyecto ya define estructura monorepo y no requiere versionar `apps/web-dashboard` como submódulo independiente.
+Impacto: `apps/web-dashboard` debe quedar bajo el control del repositorio principal para simplificar commits, despliegue y revisión del MVP.
+Estado: aceptada.

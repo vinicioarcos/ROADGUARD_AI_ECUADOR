@@ -1,4 +1,3 @@
-@"
 # GEMINI.md
 
 Instrucciones para Gemini en el proyecto RoadGuard AI Ecuador.
@@ -19,10 +18,10 @@ Gemini no debe cambiar directamente el alcance del MVP sin registrar propuesta e
 
 Toda propuesta debe responder:
 
-- Qué problema resuelve.
-- Qué costo técnico introduce.
-- Qué prioridad tiene.
-- Si pertenece al MVP o a una fase futura.
+- ¿Qué problema resuelve?
+- ¿Qué costo técnico introduce?
+- ¿Qué prioridad tiene?
+- ¿Pertenece al MVP o a una fase futura?
 
 ## Documentos iniciales
 
@@ -35,4 +34,3 @@ Toda propuesta debe responder:
 ## Enfoque
 
 Mantener el proyecto realista, vendible y técnicamente ejecutable.
-"@ | Set-Content GEMINI.md -Encoding UTF8

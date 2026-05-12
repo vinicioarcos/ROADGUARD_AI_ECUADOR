@@ -1,4 +1,3 @@
-@"
 # AGENTS.md
 
 Este archivo define los agentes responsables del proyecto RoadGuard AI Ecuador.
@@ -79,4 +78,3 @@ Archivos principales:
 ## QA Agent
 
 Responsable de verificar calidad técnica, documental y operativa.
-"@ | Set-Content AGENTS.md -Encoding UTF8

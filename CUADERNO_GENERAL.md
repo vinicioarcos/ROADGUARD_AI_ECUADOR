@@ -1,4 +1,3 @@
-@"
 # Cuaderno General del Proyecto
 
 ## Proyecto
@@ -46,7 +45,7 @@ El MVP debe permitir:
 
 ## Estado actual
 
-Fase inicial de configuración del repositorio.
+Prototipo funcional inicial. Las fases documental, scripts base y dashboard están creados. La integración operativa usa eventos locales normalizados como puente hacia Supabase.
 
 ## Decisiones iniciales
 
@@ -56,6 +55,7 @@ Fase inicial de configuración del repositorio.
 - El dashboard web será desplegable en Vercel.
 - Supabase será considerado como backend inicial.
 - YOLO será el modelo base de detección.
+- Los eventos del MVP se publicarán como JSON versionable hasta activar Supabase.
 
 ## Riesgos
 
@@ -70,4 +70,3 @@ Fase inicial de configuración del repositorio.
 ## Principio rector
 
 El sistema es un asistente de alerta y monitoreo vial, no un sistema autónomo de conducción.
-"@ | Set-Content CUADERNO_GENERAL.md -Encoding UTF8

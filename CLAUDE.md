@@ -1,4 +1,3 @@
-@"
 # CLAUDE.md
 
 Instrucciones para Claude Code o Claude Design en el proyecto RoadGuard AI Ecuador.
@@ -46,4 +45,3 @@ Después:
 ## Advertencia
 
 El sistema no es conducción autónoma. Es un asistente de monitoreo y alerta vial.
-"@ | Set-Content CLAUDE.md -Encoding UTF8

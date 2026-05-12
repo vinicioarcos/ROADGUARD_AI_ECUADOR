@@ -1,4 +1,3 @@
-@"
 # RoadGuard AI Ecuador
 
 Sistema inteligente para detección, georreferenciación y monitoreo de baches, huecos y daños viales mediante visión computacional.
@@ -24,12 +23,14 @@ Balbanera - Pallatanga - Bucay.
 ## Arquitectura general
 
 Vehículo:
+
 - Cámara frontal.
 - GPS.
 - Captura de video.
 - Inferencia opcional.
 
 Laboratorio / nube:
+
 - Procesamiento de video.
 - Extracción de frames.
 - Etiquetado.
@@ -37,6 +38,7 @@ Laboratorio / nube:
 - Validación del modelo.
 
 Dashboard web:
+
 - Mapa de eventos.
 - Filtros por ruta, fecha y severidad.
 - Evidencia visual.
@@ -45,17 +47,20 @@ Dashboard web:
 ## Stack propuesto
 
 Frontend:
+
 - Next.js
 - React
 - Tailwind CSS
 - Vercel
 
 Backend:
+
 - Supabase
 - PostgreSQL
 - Supabase Storage
 
 IA:
+
 - Python
 - OpenCV
 - Ultralytics YOLO
@@ -63,5 +68,4 @@ IA:
 
 ## Estado
 
-MVP en fase inicial de configuración.
-"@ | Set-Content README.md -Encoding UTF8
+MVP en prototipo funcional inicial. La documentación base, los scripts de visión computacional y el dashboard están creados. El dashboard consume eventos locales versionables mientras se prepara la conexión definitiva con Supabase.

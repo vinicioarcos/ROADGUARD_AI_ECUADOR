@@ -1,4 +1,3 @@
-@"
 # TASKS.md
 
 Estados permitidos:
@@ -34,8 +33,6 @@ Estados permitidos:
 | TASK-013 | Definir protocolo de captura de video | Data Engineering Agent | completada |
 | TASK-014 | Redactar docs/protocolo_captura.md | Data Engineering Agent | completada |
 
-
-
 ## Fase 2: Datos y visión computacional
 
 | ID | Tarea | Responsable | Estado |
@@ -47,7 +44,6 @@ Estados permitidos:
 | TASK-024 | Crear script de validación del modelo | Computer Vision Agent | completada |
 | TASK-025 | Crear script de generación de reportes | Data Engineering Agent | completada |
 
-
 ## Fase 3: Dashboard web
 
 | ID | Tarea | Responsable | Estado |
@@ -58,4 +54,12 @@ Estados permitidos:
 | TASK-033 | Crear tarjetas KPI | Frontend Dashboard Agent | completada |
 | TASK-034 | Preparar despliegue en Vercel | Frontend Dashboard Agent | completada |
 
-"@ | Set-Content TASKS.md -Encoding UTF8
+## Fase 4: Integración operativa del MVP
+
+| ID | Tarea | Responsable | Estado |
+|---|---|---|---|
+| TASK-040 | Limpiar codificación UTF-8 de documentos y dashboard | QA Agent | completada |
+| TASK-041 | Completar modelo de datos operativo | Data Engineering Agent | completada |
+| TASK-042 | Publicar eventos locales normalizados para dashboard | Data Engineering Agent | completada |
+| TASK-043 | Quitar dependencia de Google Fonts en build | Frontend Dashboard Agent | completada |
+| TASK-044 | Compilar dashboard de producción | QA Agent | completada |

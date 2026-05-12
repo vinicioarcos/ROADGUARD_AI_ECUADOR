@@ -1,4 +1,3 @@
-@"
 # Sistema
 .DS_Store
 Thumbs.db
@@ -35,4 +34,3 @@ datasets/processed/
 reports/semanal/*.pdf
 reports/tecnico/*.pdf
 reports/comercial/*.pdf
-"@ | Set-Content .gitignore -Encoding UTF8

@@ -1,56 +1,54 @@
 # Protocolo de Captura de Video - RoadGuard AI Ecuador
 
-Este documento establece las directrices técnicas y operativas para la recolección de datos visuales en campo, asegurando la calidad necesaria para el entrenamiento e inferencia de los modelos de visión computacional.
+Este documento establece las directrices técnicas y operativas para recolectar datos visuales en campo con calidad suficiente para entrenamiento e inferencia de modelos de visión computacional.
 
-## 1. Equipamiento Recomendado
+## 1. Equipamiento recomendado
 
-### 1.1 Cámara
-- **Resolución Mínima:** 1080p (Full HD). Recomendado 2K o 4K para mayor detalle en grietas finas.
-- **FPS (Cuadros por segundo):** Mínimo 30 FPS. Recomendado 60 FPS para reducir el desenfoque por movimiento (*motion blur*).
-- **Ángulo de Visión (FOV):** Entre 120° y 140° para capturar tanto el carril actual como las bermas.
-- **Estabilización:** Electrónica (EIS) o Óptica (OIS) obligatoria.
+## 1.1 Cámara
 
-### 1.2 GPS
-- **Frecuencia de Muestreo:** Mínimo 1Hz (una lectura por segundo). Recomendado 5Hz o 10Hz.
-- **Sincronización:** El dispositivo debe permitir la incrustación de coordenadas en los metadatos del video o la generación de un archivo `.gpx` / `.csv` sincronizado por timestamp.
+- **Resolución mínima:** 1080p. Se recomienda 2K o 4K para capturar grietas finas.
+- **FPS:** mínimo 30 FPS. Se recomienda 60 FPS para reducir desenfoque por movimiento.
+- **Ángulo de visión:** entre 120° y 140°.
+- **Estabilización:** electrónica u óptica.
 
-## 2. Instalación en el Vehículo
+## 1.2 GPS
 
-- **Posición:** Parte superior central del parabrisas (detrás del retrovisor) o montada sobre el capó.
-- **Orientación:** Mirada hacia el frente con una ligera inclinación hacia abajo (aprox. 15°-20°) para priorizar la superficie de rodadura.
-- **Obstrucciones:** Asegurarse de que las plumillas del limpiaparabrisas no bloqueen la visión y que el vidrio esté limpio.
+- **Frecuencia de muestreo:** mínimo 1 Hz. Se recomienda 5 Hz o 10 Hz.
+- **Sincronización:** el dispositivo debe permitir coordenadas en metadatos del video o un archivo `.gpx` / `.csv` sincronizado por timestamp.
 
-## 3. Condiciones de Operación
+## 2. Instalación en el vehículo
 
-### 3.1 Iluminación y Clima
-- **Horario Óptimo:** 09:00 AM a 04:00 PM (Luz solar cenital que reduce sombras largas).
-- **Clima:** Preferiblemente despejado o parcialmente nublado.
-- **Restricciones:** 
-    - Evitar lluvia fuerte (las gotas en el vidrio distorsionan la imagen).
-    - Evitar conducción directa hacia el sol (efecto *lens flare*).
-    - No capturar de noche para el MVP inicial (requiere iluminación especial).
+- **Posición:** parte superior central del parabrisas o montaje firme sobre capó.
+- **Orientación:** mirada frontal con inclinación ligera hacia abajo, aproximadamente 15° a 20°.
+- **Obstrucciones:** revisar que plumillas, reflejos o suciedad no bloqueen la visión.
 
-### 3.2 Velocidad del Vehículo
-- **Rango Recomendado:** 40 km/h a 70 km/h.
-- **Impacto:** A mayores velocidades, aumenta el riesgo de *motion blur*, dificultando la detección de grietas pequeñas.
+## 3. Condiciones de operación
 
-## 4. Procedimiento de Captura
+## 3.1 Iluminación y clima
 
-1. **Checklist Pre-Salida:**
-    - Limpiar lente de cámara y parabrisas.
-    - Verificar espacio en tarjeta SD (mínimo 64GB).
-    - Sincronizar reloj de la cámara con hora GPS (UTC).
-2. **Durante el Trayecto:**
-    - Mantener velocidad constante.
-    - Evitar maniobras bruscas.
-    - Registrar manualmente (opcional) puntos de referencia conocidos.
-3. **Post-Captura:**
-    - Respaldar videos inmediatamente.
-    - Nombrar archivos con el formato: `FECHA_RUTA_SENTIDO_ID.mp4` (Ej: `20260512_Pallatanga-Bucay_Subida_001.mp4`).
+- **Horario óptimo:** 09:00 a 16:00.
+- **Clima:** despejado o parcialmente nublado.
+- **Restricciones:** evitar lluvia fuerte, conducción directa contra el sol y capturas nocturnas para el MVP inicial.
 
-## 5. Calidad de Datos (QA)
+## 3.2 Velocidad del vehículo
 
-Antes de pasar a la fase de extracción de frames, el equipo debe validar:
-- Que no haya vibración excesiva.
+- **Rango recomendado:** 40 km/h a 70 km/h.
+- A mayor velocidad, mayor riesgo de desenfoque y menor calidad para grietas pequeñas.
+
+## 4. Procedimiento de captura
+
+1. Limpiar lente de cámara y parabrisas.
+2. Verificar espacio disponible en almacenamiento.
+3. Sincronizar reloj de cámara con hora GPS.
+4. Mantener velocidad constante durante el trayecto.
+5. Respaldar videos inmediatamente después de la captura.
+6. Nombrar archivos con formato `FECHA_RUTA_SENTIDO_ID.mp4`, por ejemplo `20260512_Pallatanga-Bucay_Subida_001.mp4`.
+
+## 5. Calidad de datos
+
+Antes de extraer frames, validar:
+
+- Que no exista vibración excesiva.
 - Que la carretera ocupe al menos el 60% del encuadre inferior.
-- Que el video no esté sobreexpuesto o subexpuesto.
+- Que el video no esté sobreexpuesto ni subexpuesto.
+- Que exista sincronización suficiente entre video y GPS.

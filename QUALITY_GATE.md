@@ -1,4 +1,3 @@
-@"
 # QUALITY_GATE.md
 
 ## Calidad documental
@@ -43,4 +42,3 @@ Antes de desplegar en Vercel:
 ## Seguridad
 
 El sistema no debe presentarse como conducción autónoma ni como garantía de prevención de accidentes. Es un asistente de monitoreo y alerta vial.
-"@ | Set-Content QUALITY_GATE.md -Encoding UTF8

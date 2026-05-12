@@ -1,35 +1,57 @@
 # Guía de Despliegue en Vercel - RoadGuard AI Ecuador
 
-Este documento describe los pasos para desplegar el dashboard web en Vercel, considerando la estructura de monorepo del proyecto.
+Este documento describe los pasos para desplegar el dashboard web en Vercel considerando la estructura de monorepo del proyecto.
 
-## 1. Configuración del Proyecto en Vercel
+## 1. Configuración del proyecto en Vercel
 
-Al importar el repositorio en Vercel, utiliza los siguientes ajustes:
+Al importar el repositorio en Vercel, usa estos ajustes:
 
-- **Framework Preset:** Next.js
-- **Root Directory:** `apps/web-dashboard`
-- **Build Command:** `next build`
-- **Output Directory:** `.next`
-- **Install Command:** `npm install` (Vercel detectará el `package.json` en el root del monorepo si se configura correctamente).
+- **Framework Preset:** Next.js.
+- **Root Directory:** `apps/web-dashboard`.
+- **Build Command:** `next build`.
+- **Output Directory:** `.next`.
+- **Install Command:** `npm install`.
 
-## 2. Variables de Entorno
+## 2. Variables de entorno
 
-Configura las siguientes variables en el dashboard de Vercel:
+Para el MVP local no se requieren variables obligatorias.
 
-### 2.1 Supabase (Futuro)
-- `NEXT_PUBLIC_SUPABASE_URL`: URL de tu proyecto Supabase.
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Clave anónima de Supabase.
+Variables preparadas para la fase Supabase:
 
-### 2.2 Configuración de Next.js
-- `NEXT_TELEMETRY_DISABLED`: `1` (Opcional, para desactivar telemetría).
+- `NEXT_PUBLIC_SUPABASE_URL`: URL del proyecto Supabase.
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: clave anónima de Supabase.
+- `NEXT_TELEMETRY_DISABLED`: `1`, opcional para desactivar telemetría de Next.js.
 
-## 3. Consideraciones de Monorepo
+## 3. Datos del dashboard
 
-Vercel soporta monorepos de forma nativa. Si tienes problemas con las dependencias compartidas en `packages/`, asegúrate de que el "Root Directory" esté apuntando a `apps/web-dashboard` y que la opción "Include source files outside of the Root Directory in the Build Step" esté activada (activada por defecto en monorepos conocidos).
+El dashboard consume eventos desde:
 
-## 4. Despliegue Manual (CLI)
+```text
+apps/web-dashboard/public/data/events.json
+```
 
-Si prefieres usar la CLI de Vercel:
+Para actualizarlo desde un CSV o JSON operativo:
+
+```bash
+python scripts/upload_events.py --input data/eventos_piloto.csv
+```
+
+El archivo de entrada debe incluir, como mínimo:
+
+- `id`
+- `timestamp`
+- `route`
+- `type`
+- `severity`
+- `confidence`
+- `lat`
+- `lng`
+
+## 4. Consideraciones de monorepo
+
+Vercel soporta monorepos de forma nativa. Si aparecen problemas de rutas, confirma que el `Root Directory` apunte a `apps/web-dashboard`.
+
+## 5. Despliegue manual con CLI
 
 ```bash
 npm install -g vercel
@@ -38,20 +60,6 @@ vercel link
 vercel deploy --prod
 ```
 
-## 5. Optimización de Imágenes
+## 6. Imágenes y fuentes
 
-Next.js en Vercel optimiza imágenes automáticamente. Para el MVP, estamos usando imágenes de Unsplash, las cuales deben estar permitidas en `next.config.ts`.
-
-```typescript
-// apps/web-dashboard/next.config.ts
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-    ],
-  },
-};
-```
+El dashboard usa evidencias locales dentro de `public/evidence/` y fuentes del sistema operativo. Esto evita fallos de compilación por descarga de recursos externos.

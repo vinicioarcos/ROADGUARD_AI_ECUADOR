@@ -1,0 +1,38 @@
+@"
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Datos pesados
+datasets/raw_videos/
+datasets/extracted_frames/
+datasets/processed/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pt
+*.onnx
+*.engine
+
+# Reportes generados
+reports/semanal/*.pdf
+reports/tecnico/*.pdf
+reports/comercial/*.pdf
+"@ | Set-Content .gitignore -Encoding UTF8
